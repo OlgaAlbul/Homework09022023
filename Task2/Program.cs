@@ -1,0 +1,11 @@
+﻿Console.WriteLine("Введите координаты трех вершин формате (x1,y1)(x2,y2)(x3,y3) координаты больше 0");
+string input = Console.ReadLine();
+Console.WriteLine("Введите коэффициент масштабирования");
+int k = int.Parse(Console.ReadLine());
+int x1= (int)(input[1] - '0');
+int y1= (int)(input[3] - '0');
+int x2= (int)(input[6] - '0');
+int y2= (int)(input[8] - '0');
+int x3= (int)(input[11] - '0');
+int y3= (int)(input[13] - '0');
+Console.WriteLine($"Координаты после увеличения: ({x1*k},{y1*k})({x2*k},{y2*k})({x3*k},{y3*k})");
